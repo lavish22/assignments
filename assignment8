@@ -1,0 +1,11 @@
+1. Parent
+   Derived
+   Derived
+
+2. error (NO default constructor)
+
+3. 5
+
+4. error (foo() method of Child class should have weaker access specifier)
+
+5.

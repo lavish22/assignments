@@ -10,9 +10,8 @@ package assignments;
  * @author lavish
  */
 public class assignment2 {
-    void OddEven(){
-        int n=-1;
-        if(n%2==1)System.out.println("odd number");
-        else      System.out.println("even number");
+    void OddEven(int n){
+        if(n%2==1)System.out.println("\nodd number");
+        else      System.out.println("\neven number");
     }
 }

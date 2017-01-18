@@ -1,0 +1,81 @@
+public static void main(String[] args) {					//factorial of a number
+        int n=5;
+        long factorial=1;
+        int temp=1;
+        if(n<0)System.out.print("invalid number");
+        else if (n==0)System.out.print(1);
+        else{
+            while(temp<n){
+                factorial=factorial*(temp+1);
+                temp++;
+            }
+        }
+        System.out.print(factorial);
+    }
+
+
+
+
+
+ public static void main(String[] args) {						//reverse a number
+        int temp,n=5904,rev=0;
+        temp=n;
+        if(temp<0)temp=-temp;               //taking only absolute value
+        while(temp>0){
+            rev=(rev*10)+temp%10;
+            temp/=10;
+        }
+        System.out.print(rev);
+    }
+
+
+ public static void main(String[] args) {					//fibonacci series
+        int a=0,b=1,n=3;
+        if(n<=0)System.out.print("please enter a valid input");
+        if(n==1)System.out.print(0);
+        else{
+            int temp=n-2,sum=0;
+            System.out.print(a);
+            System.out.print(" "+(b) );
+            while(temp>0){
+                System.out.print(" "+(a+b) );
+                sum=a+b;
+                a=b;
+                b=sum;temp--;
+            }
+        }
+    }
+
+
+
+public static void main(String[] args) {					//armsstrong number
+       int n=885,soc=0;
+       int temp=n,len;
+       for(len=0;temp>0;len++)temp=temp/10;
+       temp=n;
+       while(temp>0){
+           soc=soc+(int)Math.pow(temp%10,len);				//have to:   import java.lang.*;
+           temp/=10;
+       }
+       if(soc==n)System.out.println("Yes");
+       else      System.out.println("No");
+}
+
+
+
+public static void main(String[] args) {				//biggest of three numbers
+        int[] a= new int[3];
+        Scanner sc = new Scanner(System.in);					//have to:  import java.util.Scanner;
+        for(int i=0;i<3;i++){
+            System.out.print("enter "+(i+1)+" number :");
+            a[i]= sc.nextInt();
+        }
+        if(a[0]>a[1] && a[0]>a[2]){
+            System.out.print(a[0]+" is biggest number");
+        }
+        else if(a[1]>a[2])System.out.print(a[1]+" is biggest number");
+        else System.out.print(a[2]+" is biggest number");     
+    }
+
+
+

@@ -13,6 +13,8 @@ public class assignment3 {
     static int a=1,b=2;
     void Swap(){
         System.out.println("\nbefore swap :"+a+" "+b);
-        System.out.println("after swap  :"+b+" "+a);
+        int temp;
+        temp=a;  a=b;  b=temp;
+        System.out.println("after swap  :"+a+" "+b);
     }
 }
