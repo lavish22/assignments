@@ -1,3 +1,7 @@
+/* problem:Write a program to find duplicate element element in an integer array?
+   please tell me java equivalent of this , 
+   input: 10 integer values
+   output: each element with its no. of times occured adjacent to it */
 #include <iostream>
 
 using namespace std;
