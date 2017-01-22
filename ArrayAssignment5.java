@@ -1,3 +1,4 @@
+//problem: to find missing number in integer array of 1 to 100
 public class ArrayAssignment5{
 	public static void main(String[] args){
 		int[] intary = new int[100];
